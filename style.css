@@ -1,97 +1,188 @@
-body{
-    padding: 0;
+/* =========================
+   Reset
+========================= */
+*{
     margin: 0;
-    background-color: dodgerblue;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+/* =========================
+   Body
+========================= */
+body{
+    background-color: #6ea8fe;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     min-height: 100vh;
 }
-form{
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 15px;
-    height: 450px;
-}
-h2{
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-}
-.Txt_box{
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    height: 100px;
-}
-.txt{
-    font-size: 20px;
-    height: 15px;
-}
-#Amt{
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    font-size: 20px;
-    height: 40px;
+
+/* =========================
+   Container
+========================= */
+.container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* =========================
+   Form Card
+========================= */
+form{
+    width: 330px;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+}
+
+/* =========================
+   Heading
+========================= */
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h2{
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* =========================
+   Amount
+========================= */
+.Txt_box{
+    margin-bottom: 30px;
+}
+
+.txt{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+#Amt{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#Amt:focus{
+    border-color: dodgerblue;
+}
+
+/* =========================
+   Dropdown
+========================= */
 .dropdown{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 50px 0px 50px;
+    margin: 35px 0;
 }
-.icon{
-    font-size: 1.5rem;
-    margin: 1 rem;
+
+.from,
+.to{
+    width: 120px;
 }
-.select_container img{
-    max-width: 2rem;
+
+.from p,
+.to p{
+    font-size: 16px;
+    margin-bottom: 8px;
 }
-.from p,.to p{
-    font-size: larger;
-    margin: 5px;
-}
+
 .select_container{
-    outline: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: 1px solid rgb(125, 125, 125);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
 }
+
+.select_container img{
+    width: 32px;
+    margin-right: 8px;
+}
+
 select{
-    font-size: 15px;
-    outline: none;
+    width: 100%;
     border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
 }
+
+.icon{
+    font-size: 20px;
+    color: #666;
+    margin-top: 22px;
+}
+
+/* =========================
+   Exchange Rate
+========================= */
 .message{
     text-align: center;
-    font-size: 20px;
-    margin: 40px 25px 20px 25px;
-    padding: 5px;
-    width: 350px;
-    
+    font-size: 16px;
+    color: #333;
+    margin: 35px 0;
 }
+
+/* =========================
+   Button
+========================= */
 .submit{
     text-align: center;
 }
+
 .btn{
-    background-color: #57CC99;
-    font-size: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #5cb85c;
+    color: white;
     border: none;
-    border-radius: 10px;
-    width: 90%;
-    max-height: 40px;
-    height: 40px;
-    margin-top: 35px;
-}
-.btn:hover{
-    background-color: #52baff;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4cae4c;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media(max-width:400px){
+
+    form{
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    .dropdown{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .from,
+    .to{
+        width: 100%;
+    }
+
+    .icon{
+        transform: rotate(90deg);
+        margin: 0;
+    }
 }
