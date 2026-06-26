@@ -34,7 +34,7 @@ async function exchange(url,amt,form,to) {
     let data = await promise.json();
     console.log(data)
     const rate = data[form][to];
-    const amount = rate*amt
+    const amount = (rate * amt).toFixed(2);
     form = form.toUpperCase();
     to = to.toUpperCase();
     message.innerHTML = `${amt} ${form} = ${amount} ${to}`
