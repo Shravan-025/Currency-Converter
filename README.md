@@ -155,8 +155,3 @@ If you found this project useful, please consider giving it a **⭐ Star** on Gi
 Your support motivates me to build more open-source projects.
 
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-````
