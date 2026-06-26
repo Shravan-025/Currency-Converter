@@ -144,7 +144,7 @@ git push origin feature-name
 **Shravan Patel**
 
 - GitHub: https://github.com/Shravan-025
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn: www.linkedin.com/in/shravan-patel-b02546325
 
 ---
 
